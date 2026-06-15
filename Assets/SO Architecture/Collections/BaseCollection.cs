@@ -3,7 +3,7 @@ using Type = System.Type;
 
 namespace ScriptableObjectArchitecture
 {
-    public abstract class BaseCollection : SOArchitectureBaseObject, IEnumerable
+    public abstract class BaseCollection : GameEventBase, IEnumerable
     {
         public object this[int index]
         {
@@ -30,5 +30,5 @@ namespace ScriptableObjectArchitecture
         {
             return List.Contains(obj);
         }
-	}
+    }
 }
